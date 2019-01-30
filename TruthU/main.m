@@ -2,7 +2,7 @@
 //  main.m
 //  TruthU
 //
-//  Created by Hock Beng Lim on 20/9/15.
+//  Created by Xiao Zhe on 20/9/15.
 //  Copyright (c) 2015 Xiao Zhe Com. All rights reserved.
 //
 
