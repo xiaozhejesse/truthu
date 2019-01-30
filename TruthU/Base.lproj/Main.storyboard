@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Zp8-va-fz7">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6hJ-Za-UQE">
+                                <rect key="frame" x="120" y="370" width="80" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="MZI-OD-6ic"/>
+                                    <constraint firstAttribute="height" constant="80" id="zfL-FL-tRE"/>
+                                </constraints>
+                                <state key="normal" image="camera.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="toCameraView:" destination="BYZ-38-t0r" eventType="touchUpInside" id="apb-x8-73Y"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="truthU.png" translatesAutoresizingMaskIntoConstraints="NO" id="mwh-Ad-Hfp">
+                                <rect key="frame" x="96" y="40" width="128" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="mwh-Ad-Hfp" secondAttribute="height" multiplier="4:1" id="TJg-qt-nYr"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="truthucover.png" translatesAutoresizingMaskIntoConstraints="NO" id="zns-YO-G43">
+                                <rect key="frame" x="26" y="77" width="268" height="231"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="zns-YO-G43" secondAttribute="height" multiplier="43:37" id="VYh-6N-mDW"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="desccover.png" translatesAutoresizingMaskIntoConstraints="NO" id="DJf-Bo-FYI">
+                                <rect key="frame" x="36" y="313" width="248" height="33"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="DJf-Bo-FYI" secondAttribute="height" multiplier="15:2" id="myK-7v-spO"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Zp8-va-fz7" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="0zi-8a-6wW"/>
+                            <constraint firstAttribute="centerX" secondItem="zns-YO-G43" secondAttribute="centerX" id="4aJ-eQ-fI8"/>
+                            <constraint firstItem="zns-YO-G43" firstAttribute="top" secondItem="mwh-Ad-Hfp" secondAttribute="bottom" constant="5" id="Bgu-DJ-3UN"/>
+                            <constraint firstAttribute="trailing" secondItem="Zp8-va-fz7" secondAttribute="trailing" id="DmR-yP-SQY"/>
+                            <constraint firstAttribute="centerX" secondItem="6hJ-Za-UQE" secondAttribute="centerX" id="Xcb-4m-4lo"/>
+                            <constraint firstItem="zns-YO-G43" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="10" id="YIi-71-kG8"/>
+                            <constraint firstAttribute="centerX" secondItem="mwh-Ad-Hfp" secondAttribute="centerX" id="ZD1-V9-0vD"/>
+                            <constraint firstItem="Zp8-va-fz7" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="aIW-Nc-bLr"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="6hJ-Za-UQE" secondAttribute="bottom" constant="30" id="bJx-dS-qaj"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Zp8-va-fz7" secondAttribute="bottom" id="e8s-jf-cAj"/>
+                            <constraint firstItem="DJf-Bo-FYI" firstAttribute="top" secondItem="zns-YO-G43" secondAttribute="bottom" constant="5" id="go3-fW-bjZ"/>
+                            <constraint firstItem="DJf-Bo-FYI" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="mhh-bL-ULQ"/>
+                            <constraint firstItem="mwh-Ad-Hfp" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="oF5-qv-pDy"/>
+                            <constraint firstItem="mwh-Ad-Hfp" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="80" id="tDK-id-EMx"/>
+                            <constraint firstAttribute="centerX" secondItem="DJf-Bo-FYI" secondAttribute="centerX" id="zJJ-Wc-9vu"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <segue destination="IHX-Ep-qNw" kind="showDetail" identifier="ToCameraView" id="Ce3-Eu-H2C"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+        <!--Camera View Controller-->
+        <scene sceneID="rsT-yv-sVC">
+            <objects>
+                <viewController id="IHX-Ep-qNw" customClass="CameraViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Zi3-q2-a8M"/>
+                        <viewControllerLayoutGuide type="bottom" id="Oe3-qG-G56"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="g5H-lF-HaA">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VCt-Mp-YXf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="795" y="244"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="background.jpg" width="393" height="539"/>
+        <image name="camera.png" width="157" height="157"/>
+        <image name="desccover.png" width="448" height="35"/>
+        <image name="truthU.png" width="211" height="55"/>
+        <image name="truthucover.png" width="301" height="309"/>
+    </resources>
+</document>
